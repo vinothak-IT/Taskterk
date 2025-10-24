@@ -1,0 +1,70 @@
+/* Make the whole page stretch full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+/* Center and limit content width while filling the screen */
+#root {
+  min-height: 100vh;               /* full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Header styling */
+header {
+  background: #282c34;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 800px;               /* keeps it centered on large screens */
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Counter and Todo sections */
+.counter, .todo {
+  background: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Buttons */
+button {
+  margin: 5px;
+  padding: 8px 14px;
+  border: none;
+  background: #282c34;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #3b3f4a;
+}
+
+/* Inputs */
+input {
+  padding: 8px;
+  margin-right: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 60%;
+  max-width: 300px;
+}
